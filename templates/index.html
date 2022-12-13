@@ -196,6 +196,7 @@
                     <div><label>kddati2*</label><input type="float" name="kddati2" required></div>
                     <div><label>tkp*</label><input type="float" name="tkp" required></div>
                     <div><label>peserta*</label><input type="float" name="peserta" required></div>
+                    <div><label>tanggal(year)*</label><input type="float" name="tglpelayanan" required></div>
                 </div>
             </fieldset>
             <button type="submit" href="/">Submit</button>
@@ -207,8 +208,8 @@
                     <h3>Output</h3>
                 </legend>
                 <div class="account-details">
-                    <div><label>Case</label><input type="text" name="output1" value="{{ output1 }}" readonly></div>
-                    <div><label>Cost</label><input type="text" name="output2" value="{{ output2 }}" readonly></div>
+                    <div><label>Case</label><input type="text" name="output1" value="{{unit_cost}}" readonly></div>
+                    <div><label>Cost</label><input type="text" name="output2" value="{{case}}" readonly></div>
                 </div>
             </fieldset>
             <!-- <fieldset>
