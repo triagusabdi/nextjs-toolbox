@@ -37,14 +37,22 @@
         }
 
         .main-block {
-            display: flex;
+            display: block;
             justify-content: center;
             align-items: center;
             background: #fff;
         }
 
+        .vertical-center {
+            margin: 0;
+            position: absolute;
+            top: 50%;
+            -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
+        }
+
         form {
-            width: 100%;
+            width: 90%;
             padding: 20px;
         }
 
@@ -81,7 +89,7 @@
         }
 
         input {
-            padding: 5px;
+            padding: 7px;
             vertical-align: middle;
         }
 
@@ -142,7 +150,7 @@
         }
 
         button {
-            width: 100%;
+            width: 20%;
             padding: 10px 0;
             margin: 10px auto;
             border-radius: 5px;
@@ -157,19 +165,19 @@
             background: #82b534;
         }
 
-        @media (min-width: 568px) {
+        @media (min-width: 300px) {
 
             .account-details>div,
             .personal-details>div {
-                width: 50%;
-            }
-
-            label {
                 width: 40%;
             }
 
+            label {
+                width: 50%;
+            }
+
             input {
-                width: 60%;
+                width: 30%;
             }
 
             select,
@@ -193,13 +201,13 @@
                     <h3>Input-detail</h3>
                 </legend>
                 <div class="account-details">
-                    <div><label>kddati2*</label><input type="float" name="kddati2" required></div>
-                    <div><label>tkp*</label><input type="float" name="tkp" required></div>
-                    <div><label>peserta*</label><input type="float" name="peserta" required></div>
-                    <div><label>tanggal(year)*</label><input type="float" name="tglpelayanan" required></div>
+                    <div><label>Kode Kabupaten/Kota*</label><input type="float" name="kddati2" required></div>
+                    <div><label>Tingkat Pelayanan* <br>(30:rawat jalan/40:rawat inap)</label><input type="float" name="tkp" required></div>
+                    <div><label>Jumlah Peserta Aktif* </label><input type="float" name="peserta" required></div>
+                    <div><label>Tahun Pelayanan(year) <br> yyyy*</label><input type="float" name="tglpelayanan" required></div>
                 </div>
             </fieldset>
-            <button type="submit" href="/">Submit</button>
+            <button type="submit" href="/">Calculate</button>
         </form>
         <form>
             <h2>Berikut Hasil Cost dan Case</h2>
